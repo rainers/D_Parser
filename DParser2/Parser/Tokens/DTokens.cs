@@ -234,7 +234,7 @@ namespace D_Parser.Parser
 		public const byte MaxToken = 186;
 
 
-		static readonly Dictionary<byte, string> Keywords = new Dictionary<byte, string> {
+		public static readonly Dictionary<byte, string> Keywords = new Dictionary<byte, string> {
 			{ __gshared, "__gshared" },
 			// {__thread, "__thread"},
 			{ __traits, "__traits" },
