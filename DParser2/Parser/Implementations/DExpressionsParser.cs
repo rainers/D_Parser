@@ -323,22 +323,22 @@ namespace D_Parser.Parser.Implementations
 					break;
 
 				case DTokens.Is:
-					ae = new IdentityExpression(false);
+					ae = new IdentityExpression(false, Lexer.LookAhead.Location);
 					break;
 
 				case DTokens.In:
-					ae = new InExpression(false);
+					ae = new InExpression(false, Lexer.LookAhead.Location);
 					break;
 
 				case DTokens.Not:
 					switch (Peek(1).Kind)
 					{
 						case DTokens.Is:
-							ae = new IdentityExpression(false);
+							ae = new IdentityExpression(false, Lexer.LookAhead.Location);
 							Step();
 							break;
 						case DTokens.In:
-							ae = new InExpression(true);
+							ae = new InExpression(true, Lexer.LookAhead.Location);
 							Step();
 							break;
 						default:
