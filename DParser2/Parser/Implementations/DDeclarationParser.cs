@@ -9,8 +9,8 @@ namespace D_Parser.Parser.Implementations
 	{
 		readonly DParserParts parserParts;
 
-		public DDeclarationParser(DParserStateContext stateContext, DParserParts parserParts)
-			: base(stateContext) => this.parserParts = parserParts;
+        public DDeclarationParser(DParserStateContext stateContext, DParserParts parserParts)
+            : base(stateContext) { this.parserParts = parserParts; }
 
 		#region Declarations
 		// http://www.digitalmars.com/d/2.0/declaration.html

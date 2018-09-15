@@ -10,8 +10,8 @@ namespace D_Parser.Parser.Implementations
 	{
 		readonly DParserParts parserParts;
 
-		public DModulesParser(DParserStateContext stateContext, DParserParts parserParts)
-			: base(stateContext) => this.parserParts = parserParts;
+        public DModulesParser(DParserStateContext stateContext, DParserParts parserParts)
+            : base(stateContext) { this.parserParts = parserParts; }
 
 		// http://www.digitalmars.com/d/2.0/module.html
 

@@ -11,8 +11,8 @@ namespace D_Parser.Parser.Implementations
 	{
 		readonly DParserParts parserParts;
 
-		public DBodiedSymbolsParser(DParserStateContext stateContext, DParserParts parserParts)
-			: base(stateContext) => this.parserParts = parserParts;
+        public DBodiedSymbolsParser(DParserStateContext stateContext, DParserParts parserParts)
+            : base(stateContext) { this.parserParts = parserParts; }
 
 		#region Structs & Unions
 		public INode AggregateDeclaration(INode Parent)
